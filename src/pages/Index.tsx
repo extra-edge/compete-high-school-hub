@@ -23,21 +23,21 @@ interface Competition {
 const competitions: Competition[] = [
   {
     id: 1,
-    title: "Science Olympiad",
-    description: "A national STEM competition covering 23 events in biology, chemistry, physics, and engineering.",
-    category: "STEM",
+    title: "Math Olympiad",
+    description: "Challenging mathematical problem-solving competition for advanced students.",
+    category: "Math",
     grades: [9, 10, 11, 12],
-    deadline: "December 15, 2024",
-    prize: "National Recognition + Scholarships",
+    deadline: "February 10, 2025",
+    prize: "Medals + College Recognition",
     difficulty: "Advanced",
-    website: "https://www.soinc.org",
-    participants: "Teams of 15"
+    website: "https://www.moems.org",
+    participants: "Teams of 5"
   },
   {
     id: 2,
     title: "DECA Competition",
     description: "Business and marketing competition with role-playing scenarios and written exams.",
-    category: "Business",
+    category: "Finance",
     grades: [9, 10, 11, 12],
     deadline: "January 20, 2025",
     prize: "$5,000+ in scholarships",
@@ -47,45 +47,9 @@ const competitions: Competition[] = [
   },
   {
     id: 3,
-    title: "National Art Honor Society",
-    description: "Visual arts competition showcasing creativity and technical skill.",
-    category: "Arts",
-    grades: [10, 11, 12],
-    deadline: "March 1, 2025",
-    prize: "Portfolio Recognition",
-    difficulty: "Beginner",
-    website: "https://www.arteducators.org",
-    participants: "Individual"
-  },
-  {
-    id: 4,
-    title: "Math Olympiad",
-    description: "Challenging mathematical problem-solving competition for advanced students.",
-    category: "STEM",
-    grades: [9, 10, 11, 12],
-    deadline: "February 10, 2025",
-    prize: "Medals + College Recognition",
-    difficulty: "Advanced",
-    website: "https://www.moems.org",
-    participants: "Teams of 5"
-  },
-  {
-    id: 5,
-    title: "Model United Nations",
-    description: "Diplomatic simulation where students represent countries in UN committees.",
-    category: "Social Studies",
-    grades: [9, 10, 11, 12],
-    deadline: "November 30, 2024",
-    prize: "Awards + Leadership Recognition",
-    difficulty: "Intermediate",
-    website: "https://www.nmun.org",
-    participants: "Delegations"
-  },
-  {
-    id: 6,
     title: "Congressional Debate",
     description: "Speech and debate competition simulating legislative sessions.",
-    category: "Speech & Debate",
+    category: "Debate",
     grades: [9, 10, 11, 12],
     deadline: "January 5, 2025",
     prize: "Tournament Trophies",
@@ -94,22 +58,10 @@ const competitions: Competition[] = [
     participants: "Individual"
   },
   {
-    id: 7,
-    title: "Scholastic Bowl",
-    description: "Academic quiz competition covering multiple subjects.",
-    category: "Academic",
-    grades: [9, 10, 11, 12],
-    deadline: "December 1, 2024",
-    prize: "Team Trophies + Scholarships",
-    difficulty: "Beginner",
-    website: "https://www.naqt.com",
-    participants: "Teams of 4"
-  },
-  {
-    id: 8,
+    id: 4,
     title: "Future Business Leaders",
     description: "Business competition with events in accounting, marketing, and entrepreneurship.",
-    category: "Business",
+    category: "Finance",
     grades: [9, 10, 11, 12],
     deadline: "February 28, 2025",
     prize: "$10,000+ scholarships",
@@ -118,27 +70,75 @@ const competitions: Competition[] = [
     participants: "Individual/Team"
   },
   {
-    id: 9,
-    title: "Robotics Competition",
-    description: "Design, build, and program robots to complete challenging tasks.",
-    category: "STEM",
+    id: 5,
+    title: "National Speech & Debate",
+    description: "Premier national debate tournament with multiple debate formats.",
+    category: "Debate",
     grades: [9, 10, 11, 12],
-    deadline: "January 15, 2025",
-    prize: "Engineering Scholarships",
+    deadline: "March 15, 2025",
+    prize: "National Championship Titles",
     difficulty: "Advanced",
-    website: "https://www.firstinspires.org",
-    participants: "Teams of 10-25"
+    website: "https://www.speechanddebate.org",
+    participants: "Individual/Team"
+  },
+  {
+    id: 6,
+    title: "AMC 10/12",
+    description: "American Mathematics Competition for high school students.",
+    category: "Math",
+    grades: [10, 11, 12],
+    deadline: "November 15, 2024",
+    prize: "AIME Qualification + Recognition",
+    difficulty: "Advanced",
+    website: "https://www.maa.org/math-competitions",
+    participants: "Individual"
+  },
+  {
+    id: 7,
+    title: "Public Forum Debate",
+    description: "Two-person debate format focusing on current events and policy issues.",
+    category: "Debate",
+    grades: [9, 10, 11, 12],
+    deadline: "December 1, 2024",
+    prize: "State & National Qualifications",
+    difficulty: "Intermediate",
+    website: "https://www.speechanddebate.org",
+    participants: "Teams of 2"
+  },
+  {
+    id: 8,
+    title: "MATHCOUNTS",
+    description: "Middle and early high school mathematics competition program.",
+    category: "Math",
+    grades: [9],
+    deadline: "February 1, 2025",
+    prize: "Scholarships + National Recognition",
+    difficulty: "Intermediate",
+    website: "https://www.mathcounts.org",
+    participants: "Individual/Team"
+  },
+  {
+    id: 9,
+    title: "Personal Finance Challenge",
+    description: "National competition testing knowledge of personal finance and economics.",
+    category: "Finance",
+    grades: [9, 10, 11, 12],
+    deadline: "March 30, 2025",
+    prize: "$3,000 in scholarships",
+    difficulty: "Beginner",
+    website: "https://www.nefe.org",
+    participants: "Individual"
   },
   {
     id: 10,
-    title: "Creative Writing Contest",
-    description: "Original poetry, short stories, and essays competition.",
-    category: "Arts",
+    title: "Lincoln-Douglas Debate",
+    description: "One-on-one philosophical debate format focusing on values and ethics.",
+    category: "Debate",
     grades: [9, 10, 11, 12],
-    deadline: "April 1, 2025",
-    prize: "Publication + $1,000",
-    difficulty: "Beginner",
-    website: "https://www.scholastic.com",
+    deadline: "January 10, 2025",
+    prize: "Tournament Championships",
+    difficulty: "Advanced",
+    website: "https://www.speechanddebate.org",
     participants: "Individual"
   }
 ];
@@ -181,9 +181,9 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex items-center gap-3 mb-6">
             <Trophy className="h-8 w-8 text-blue-600" />
-            <h1 className="text-3xl font-bold text-gray-900">CompeteHub</h1>
+            <h1 className="text-3xl font-bold text-gray-900">ExtraEdge</h1>
           </div>
-          <p className="text-gray-600 text-lg">Discover amazing competitions for high school students</p>
+          <p className="text-gray-600 text-lg">Excel in Math, Finance & Debate competitions</p>
         </div>
       </header>
 
