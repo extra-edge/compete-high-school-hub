@@ -10,6 +10,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { CalendarIcon, Plus, Trophy } from "lucide-react";
 import { format } from "date-fns";
 import { cn } from "@/lib/utils";
+import AuthenticatedLayout from "@/components/AuthenticatedLayout";
 
 const Journal = () => {
   const [competitions, setCompetitions] = useState<any[]>([]);
@@ -68,8 +69,8 @@ const Journal = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-muted/10 to-primary/5 p-6">
-      <div className="max-w-6xl mx-auto space-y-6">
+    <AuthenticatedLayout>
+      <div className="p-6 space-y-6">
         {/* Header */}
         <div className="space-y-2">
           <h1 className="text-3xl font-bold">Competition Journal</h1>
@@ -197,7 +198,7 @@ const Journal = () => {
           </div>
         </div>
       </div>
-    </div>
+    </AuthenticatedLayout>
   );
 };
 
