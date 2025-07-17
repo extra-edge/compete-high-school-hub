@@ -1,7 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowRight, Trophy, Users, TrendingUp, Star, CheckCircle, Menu, X } from "lucide-react";
+import { ArrowRight, Trophy, Users, TrendingUp, Star, CheckCircle, Menu, X, ExternalLink } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -27,7 +27,9 @@ const Home = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#features" className="text-muted-foreground hover:text-foreground transition-colors">Features</a>
               <a href="#about" className="text-muted-foreground hover:text-foreground transition-colors">About</a>
-              <a href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              <a href="https://forms.google.com/feedback" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors flex items-center gap-1">
+                Feedback <ExternalLink className="h-3 w-3" />
+              </a>
               <Link to="/login">
                 <Button variant="ghost">Sign In</Button>
               </Link>
@@ -57,7 +59,7 @@ const Home = () => {
             <div className="px-4 py-2 space-y-1">
               <a href="#features" className="block px-3 py-2 text-muted-foreground hover:text-foreground transition-colors">Features</a>
               <a href="#about" className="block px-3 py-2 text-muted-foreground hover:text-foreground transition-colors">About</a>
-              <a href="#contact" className="block px-3 py-2 text-muted-foreground hover:text-foreground transition-colors">Contact</a>
+              <a href="https://forms.google.com/feedback" target="_blank" rel="noopener noreferrer" className="block px-3 py-2 text-muted-foreground hover:text-foreground transition-colors">Feedback</a>
               <div className="flex flex-col space-y-2 pt-2">
                 <Link to="/login">
                   <Button variant="ghost" className="w-full justify-start">Sign In</Button>
@@ -77,6 +79,7 @@ const Home = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center space-y-8 animate-fade-in">
             <div className="space-y-4">
+              <p className="text-lg text-primary font-medium tracking-wide uppercase">Always Two Steps Ahead</p>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-foreground via-foreground to-muted-foreground bg-clip-text text-transparent">
                 Compete with
                 <span className="block bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
@@ -189,7 +192,7 @@ const Home = () => {
       {/* Footer */}
       <footer className="bg-background border-t border-border/50 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="space-y-4">
               <div className="flex items-center space-x-2">
                 <div className="w-8 h-8 bg-gradient-to-r from-primary to-primary/80 rounded-lg flex items-center justify-center">
@@ -206,7 +209,6 @@ const Home = () => {
               <h3 className="font-semibold mb-4">Product</h3>
               <div className="space-y-2 text-muted-foreground">
                 <p>Features</p>
-                <p>Pricing</p>
                 <p>Dashboard</p>
               </div>
             </div>
@@ -217,15 +219,6 @@ const Home = () => {
                 <p>About</p>
                 <p>Contact</p>
                 <p>Support</p>
-              </div>
-            </div>
-            
-            <div>
-              <h3 className="font-semibold mb-4">Legal</h3>
-              <div className="space-y-2 text-muted-foreground">
-                <p>Privacy</p>
-                <p>Terms</p>
-                <p>Security</p>
               </div>
             </div>
           </div>
