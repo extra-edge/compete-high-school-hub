@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { ArrowRight, Trophy, Users, TrendingUp, Star, CheckCircle, Menu, X, ExternalLink } from "lucide-react";
@@ -204,6 +203,9 @@ const Home = () => {
               <h3 className="font-semibold mb-4">Product</h3>
               <div className="space-y-2 text-muted-foreground">
                 <p>Features</p>
+                <Link to="/about" className="block text-muted-foreground hover:text-foreground transition-colors">
+                  About
+                </Link>
               </div>
             </div>
           </div>
