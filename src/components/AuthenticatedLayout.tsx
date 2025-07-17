@@ -1,6 +1,5 @@
-
 import { Link, useLocation } from "react-router-dom";
-import { Trophy, Search, BookOpen, BarChart3 } from "lucide-react";
+import { Trophy, Search, BookOpen, BarChart3, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface AuthenticatedLayoutProps {
@@ -14,6 +13,7 @@ const AuthenticatedLayout = ({ children }: AuthenticatedLayoutProps) => {
     { path: "/dashboard", label: "Dashboard", icon: BarChart3 },
     { path: "/search", label: "Competitions", icon: Search },
     { path: "/journal", label: "Journal", icon: BookOpen },
+    { path: "/about", label: "About", icon: User },
   ];
 
   return (
